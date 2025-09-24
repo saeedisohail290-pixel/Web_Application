@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+          background-color: rgb(195, 193, 193);  
+        }
+          
+            .login{
+                    width: 390px;
+                    height: 490px;
+                    border: 1px solid rgb(249, 246, 246);
+                    margin: 0 auto;
+                    position: relative;
+                    top: 70px;
+                    background-color: rgb(195, 193, 193);
+                    border-radius: 10px;
+                    transition: 2s;
+                    box-shadow: 5px 5px 10px rgb(69, 67, 67);
+                    overflow-y: hidden;
+                    padding:-50px;
+
+            }
+            .login:hover{
+                border: 1px solid rgb(193, 193, 189);
+                box-shadow: 5px 5px 10px rgb(69, 67, 67);
+            }
+
+            @media screen and(max-width:767px) {
+                .login{
+
+                    width: 500px;
+                    font-size:20px;
+                    margin: 0 auto;
+                    
+
+                }
+                
+            }
+
+            .login>h2{
+                text-align: center;
+                position: relative;
+                top: 40px;
+                margin: 20px;
+                padding: 15px;
+            
+            }
+            
+            form>label,input{
+                display: block;
+                position: relative;
+                margin: 0 auto;
+                width: 290px;
+                padding: 7px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                outline: none;
+                background-color: rgb(195, 193, 193);
+                
+            }
+
+            form>input{
+                margin-top:13px ; 
+                transition: 0.9s;
+            }
+
+            [for="pass"],[for="user"]{
+                position: relative;
+                top: 10px;
+                padding: 5px;
+                
+            }
+
+            [for="user"]{
+                position: relative;
+                top: 15px;
+
+            }
+
+            form>input:focus{
+                border-bottom:1px solid rgb(145, 139, 139);
+                transition: scale(1.1);
+                box-shadow: 3px 3px 5px gray;
+                border-radius: 5px;
+
+            }
+
+            form>label{
+              position: relative;
+              text-align: center;
+              display: flex;
+              justify-items: flex-start;
+
+            }
+
+           .mydiv{
+            display: flex;
+            justify-items: flex-start;
+            width: 220px;
+            justify-content: space-between;
+
+           }
+
+           .mydiv>input{
+            width: 25px;
+            height: 25px;
+            position: relative;
+            margin-right: 10px;
+            left: 50px;
+            top: 20px;
+
+           }
+
+           .mydiv>label{
+            position: relative;
+            left: 50px;
+            top:20px;
+           }
+
+           .mydiv>a{
+            position: relative;
+            left: 140px;
+            top: 20px;
+            width: 200px;
+           }
+
+           .submit{
+            position: relative;
+            top: 30px;
+            width: 140px;
+            border-radius: 5px;
+            border-bottom: none;
+            box-shadow: 5px 5px 10px rgb(69, 67, 67);
+            transition: 3s;
+            border: 1px solid rgb(249, 246, 246);;
+           }
+           .submit:focus{
+             transform: rotate(380deg);   
+           }
+           .submit:hover{
+            transform: rotate(360deg);
+           }
+            
+           form{
+            position: relative;
+            top: 40px;
+           }
+            
+    </style>
+</head>
+<body>
+    <!-- Login -->
+    <div class="login">
+        <h2><q>Login Page</q> </h2>
+        <!-- form -->
+        <form action="">
+            <!-- username -->
+            <label for="user" >Username</label>
+            <input type="text" autocomplete="off" id="user">
+            <!-- password -->
+            <label for="pass">Password</label>
+            <input type="password" id="pass">
+            <div class="mydiv">
+                <!-- checkbox -->
+                <input class="Remember" type="checkbox" id="rem">   
+                <label for="rem">Remember Me </label>
+                <a href="Register.html">Forgot Password?</a>
+            </div>
+            <input class="submit" type="submit">
+        </form>
+         <marquee behavior="wavy" direction="right" style="margin-top: 140px; text-shadow: 5px 5px 20px black;">&copy; created by Sohail Saeedi✨</marquee>
+    </div>
+</body>
+<!-- 🖤🩶 -->
+</html>
